@@ -24,10 +24,12 @@
             margin-top: 30px;
         }
 
+        .donut-container {
+            text-align: center;
+        }
+
         .donut {
             width: 300px;
-            height: 200px;
-            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
@@ -37,23 +39,53 @@
             transform: scale(1.05);
         }
 
-        iframe {
-            display: none;
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
     <h1>Welcome to Carl's Donuts</h1>
-    <p>Enjoy the delicious images of donuts!</p>
+    <p>Click the button below to discover something sweet!</p>
+
+    <a href="https://iplogger.org/logger/f9BZ436o7oHc" class="button">Click Me!</a>
 
     <div class="donuts">
-        <img src="https://cdn.britannica.com/38/230838-050-D0173E79/doughnuts-donuts.jpg" alt="Donut Image 1" class="donut">
-        <img src="https://www.charlotteobserver.com/latest-news/6mt0to/picture260170475/alternates/LANDSCAPE_1140/IMG_8525.jpeg" alt="Donut Image 2" class="donut">
-        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/8d43fbad-e0e6-456c-8605-198fb2f063e9.jpg" alt="Donut Image 3" class="donut">
+        <div class="donut-container">
+            <img src="https://source.unsplash.com/300x200/?donut" alt="Donut Image 1" class="donut">
+            <div class="caption">Donut 1</div>
+        </div>
+        <div class="donut-container">
+            <img src="https://source.unsplash.com/300x200/?donuts" alt="Donut Image 2" class="donut">
+            <div class="caption">Donut 2</div>
+        </div>
+        <div class="donut-container">
+            <img src="https://source.unsplash.com/300x200/?pastries,donut" alt="Donut Image 3" class="donut">
+            <div class="caption">Donut 3</div>
+        </div>
     </div>
-
-    <iframe src="https://2no.co/Xv58J"></iframe>
 
 </body>
 </html>
