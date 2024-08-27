@@ -25,11 +25,13 @@
         }
 
         .donut-container {
+            position: relative;
+            width: 300px;
             text-align: center;
         }
 
         .donut {
-            width: 300px;
+            width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
@@ -37,6 +39,18 @@
 
         .donut:hover {
             transform: scale(1.05);
+        }
+
+        .number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 50%;
         }
 
         .button {
@@ -56,13 +70,6 @@
         .button:hover {
             background-color: #45a049;
         }
-
-        .caption {
-            margin-top: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #555;
-        }
     </style>
 </head>
 <body>
@@ -75,15 +82,15 @@
     <div class="donuts">
         <div class="donut-container">
             <img src="https://source.unsplash.com/300x200/?donut" alt="Donut Image 1" class="donut">
-            <div class="caption">Donut 1</div>
+            <div class="number">1</div>
         </div>
         <div class="donut-container">
             <img src="https://source.unsplash.com/300x200/?donuts" alt="Donut Image 2" class="donut">
-            <div class="caption">Donut 2</div>
+            <div class="number">2</div>
         </div>
         <div class="donut-container">
             <img src="https://source.unsplash.com/300x200/?pastries,donut" alt="Donut Image 3" class="donut">
-            <div class="caption">Donut 3</div>
+            <div class="number">3</div>
         </div>
     </div>
 
